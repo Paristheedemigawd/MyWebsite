@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 aut0;
+	width: 1000px;
+}
+
+.img-rosemary{
+	width: 500px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(35, 2, 17);
+}
+
+/* Slide Show Info */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: lightpink;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 6px 6px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #F8CFDE;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Eater;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #F8CFDE;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F8CFDE;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ /*Title style*/
+  #DEMIWORLD {
+    font-size: 60px;
+    background-color: rgb(248, 207, 222);
+    color: white;
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
+    padding: 20px;
+    /*margin: 20px;*/
+  }
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #8E6176;
+  font-family: 'Eater', cursive;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #763553;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8E6176;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgb(118, 53, 83);
+	
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #8E6176;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Slideshow Gallery */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #F8CFDE;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #F8CFDE;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: #F8CFDE;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.contact{
+  font-family: Emilys Candy, cursive;
+  color: #F8CFDE;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #8E6176;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F8CFDE;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #763553;
+  padding: 20px;
+}
+
+.wrapper h1 {
+font-family: 'Eater', cursive;
+color: #F8CFDE;
+font-size: 40px;
+}
+
+.wrapper p {
+  color: #F8CFDE;
+  font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div style="display: flex; flex-direction: column; height: 100%;">
+<div><h1 id="DEMIWORLD">DEMI WORLD</h1></div>
+
+
+<div class="navbar">
+  <a href="Homepage.html">HOME</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="Me.html">ME</a>
+    <a href="Portfolio.html">PORTFOLIO</a>
+    <a href="Comic.html">COMIC</a>
+    <a href="characters.html">CHARACTERS</a>
+    </div>
+  </div> 
+  <a href="Support.html">SUPPORT</a>
+      <a href="Contact.html">CONTACT</a>
+      <a href="Dress-Up.html">DRESS-UP</a>
+      <a href="Buy.html">BUY</a>
+</div>
+
+</body>
+</html>

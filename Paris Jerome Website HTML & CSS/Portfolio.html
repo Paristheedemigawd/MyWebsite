@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- <style type="text/css">
+	#DEMIWORLD {
+		background-color: rgb(248, 207, 222);
+		color: white;
+		text-align: center;
+		font-family: 'Emilys Candy', cursive;
+	}
+</style> -->
+
+	<meta charset="utf-8">
+	<title></title>
+	
+
+<!-- fonts from google fonts-->	 
+	
+	<!-- Title font -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');">
+
+	<!-- Navbar font -->
+	<link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		text-align: center;
+		font-family:'Eater', cursive;
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<div style="display: flex; flex-direction: column; height: 100%;">
+<div><h1 id="DEMIWORLD">DEMI WORLD</h1></div>
+
+
+<div class="navbar">
+  <a href="Homepage.html">HOME</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      	<a href="Me.html">ME</a>
+		<a href="Portfolio.html">PORTFOLIO</a>
+		<a href="Comic.html">COMIC</a>
+		<a href="characters.html">CHARACTERS</a>
+    </div>
+  </div> 
+  <a href="Support.html">SUPPORT</a>
+      <a href="Contact.html">CONTACT</a>
+      <a href="Dress-Up.html">DRESS-UP</a>
+      <a href="Buy.html">BUY</a>
+</div>
+
+<!-- Portfolio Images -->
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+      <img src="Images/Doja.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+      <img src="Images/Dayzee.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+      <img src="Images/boys.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+      <img src="Images/girls.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+      <img src="Images/wolf.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+      <img src="Images/Posterized.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+      <img src="Images/Rosemary.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+      <img src="Images/img1.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Doja.jpg" style="width:100%" onclick="currentSlide(1)" alt="Doja Cat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Dayzee.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dayzee">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/boys.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Boys">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/girls.jpg" style="width:100%" onclick="currentSlide(4)" alt="The Girls">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/wolf.jpg" style="width:100%" onclick="currentSlide(5)" alt="Baby Wolf">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Posterized.jpg" style="width:100%" onclick="currentSlide(6)" alt="Posterized Self Portrait">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Rosemary.jpg" style="width:100%" onclick="currentSlide(6)" alt="Rosemary">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Rosemary and Cam">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</div>
